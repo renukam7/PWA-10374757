@@ -1,4 +1,4 @@
-﻿//	Installing the Service Worker
+//	Installing the Service Worker
 var CACHE_NAME = 'renukaApp';
 var urlsToCache = [
   './',

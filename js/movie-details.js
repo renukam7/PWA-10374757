@@ -1,3 +1,15 @@
+$(document).ready(function(){
+  var n = localStorage.getItem("mTitle");
+  var time = localStorage.getItem("mTime");
+  var day = localStorage.getItem("mDay");
+  var imgId = localStorage.getItem("image");
+  var dataURL = 'https://college-movies.herokuapp.com/';
+  $('#bookingTitle').text(n);
+  $("#bookingTime").text(time);
+  $("#bookingDay").text(day);
+  var images= '<img class="job-item section-before background-image" src="/Trail/images/'+(parseInt(imageId)+1)+'.jpg"></image>';
+  $('#backgroung-image').append(images);
+});
 var MovieDay, MovieTime;
 
 function onBodyLoad() {
